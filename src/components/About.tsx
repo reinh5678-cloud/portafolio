@@ -2,7 +2,7 @@
 
 export function About() {
   return (
-    <section id="sobre-mi" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <section id="sobre-mi" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
       <div className="mb-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Sobre mí</h2>
         <p className="mt-2 text-text-secondary">Perfil profesional</p>

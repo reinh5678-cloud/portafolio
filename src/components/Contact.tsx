@@ -1,9 +1,10 @@
-﻿import { FileText, Mail, Phone } from 'lucide-react'
+﻿import { Mail, Phone } from 'lucide-react'
 import { profile } from '../data/profile'
+import { GithubIcon, LinkedinIcon } from './icons'
 
 export function Contact() {
   return (
-    <section id="contacto" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <section id="contacto" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
       <div className="mb-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Contacto</h2>
         <p className="mt-2 text-text-secondary">¿Tienes un proyecto o idea? Hablemos.</p>
@@ -14,7 +15,7 @@ export function Contact() {
             <Mail className="h-5 w-5 text-text-secondary" />
             <div>
               <p className="text-sm">Email</p>
-              <p className="text-sm text-text-secondary">{profile.email}</p>
+              <p className="text-sm break-all text-text-secondary">{profile.email}</p>
             </div>
           </a>
           <a href={'tel:' + profile.phone.replace(/\s+/g, '')} className="flex items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-accent/60">
@@ -25,14 +26,14 @@ export function Contact() {
             </div>
           </a>
           <a href={profile.github} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-accent/60">
-            <FileText className="h-5 w-5 text-text-secondary" />
+            <GithubIcon className="h-5 w-5 shrink-0 text-text-secondary" />
             <div>
               <p className="text-sm">GitHub</p>
               <p className="text-sm text-text-secondary">@reinh5678-cloud</p>
             </div>
           </a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-accent/60">
-            <FileText className="h-5 w-5 text-text-secondary" />
+            <LinkedinIcon className="h-5 w-5 shrink-0 text-text-secondary" />
             <div>
               <p className="text-sm">LinkedIn</p>
               <p className="text-sm text-text-secondary">Ver perfil</p>

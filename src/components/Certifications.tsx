@@ -1,9 +1,9 @@
-﻿import { FileText } from 'lucide-react'
+﻿import { Award } from 'lucide-react'
 import { profile } from '../data/profile'
 
 export function Certifications() {
   return (
-    <section id="certificaciones" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <section id="certificaciones" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
       <div className="mb-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Certificaciones</h2>
         <p className="mt-2 text-text-secondary">Formación complementaria</p>
@@ -13,7 +13,7 @@ export function Certifications() {
           <article key={cert.name} className="flex items-center justify-between rounded-2xl border border-border bg-card p-4">
             <div className="flex items-center gap-3">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-surface">
-                <FileText className="h-4 w-4 text-text-secondary" />
+                <Award className="h-4 w-4 text-text-secondary" />
               </div>
               <p className="text-sm">{cert.name}</p>
             </div>

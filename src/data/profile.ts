@@ -107,7 +107,7 @@
     { name: 'Análisis de Datos con Minitab', file: null },
     { name: 'SQL Server Intermedio', file: null },
     { name: 'UX/UI Fundamentals aplicando Figma', file: null },
-    { name: 'Constancia de Prácticas - Hospital San José de Chincha', file: '/img/certs/constancia.jpg' },
-    { name: 'Certificado de Trabajo - Cuántica Group S.A.C.', file: '/img/certs/cert-trabajo.jpg' }
+    { name: 'Constancia de Prácticas - Hospital San José de Chincha', file: null },
+    { name: 'Certificado de Trabajo - Cuántica Group S.A.C.', file: null }
   ]
 } as const

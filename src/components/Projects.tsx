@@ -1,12 +1,13 @@
-﻿import { ExternalLink, FileText } from 'lucide-react'
+﻿import { ExternalLink } from 'lucide-react'
 import { profile } from '../data/profile'
+import { GithubIcon } from './icons'
 
 export function Projects() {
   const featured = profile.projects.filter((p) => p.featured)
   const others = profile.projects.filter((p) => !p.featured)
 
   return (
-    <section id="proyectos" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <section id="proyectos" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
       <div className="mb-8">
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Proyectos</h2>
         <p className="mt-2 text-text-secondary">Proyectos destacados</p>
@@ -36,7 +37,7 @@ export function Projects() {
               </ul>
               <div className="mt-auto flex items-center gap-3">
                 <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-text-secondary transition-colors hover:text-text">
-                  <FileText className="h-4 w-4" />
+                  <GithubIcon className="h-4 w-4" />
                   Código
                 </a>
                 {project.demo && (
@@ -68,7 +69,7 @@ export function Projects() {
                   ))}
                 </div>
                 <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-text-secondary transition-colors hover:text-text">
-                  <FileText className="h-4 w-4" />
+                  <GithubIcon className="h-4 w-4" />
                   Ver en GitHub
                 </a>
               </article>
