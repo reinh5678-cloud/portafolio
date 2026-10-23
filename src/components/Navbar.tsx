@@ -16,12 +16,26 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    if (!open) return
+    if (!open) {
+      document.body.style.removeProperty('overflow')
+      return
+    }
+    document.body.style.overflow = 'hidden'
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setOpen(false)
     }
+    const onResize = () => {
+      if (window.innerWidth >= 640) {
+        setOpen(false)
+      }
+    }
     window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
+    window.addEventListener('resize', onResize)
+    return () => {
+      document.body.style.removeProperty('overflow')
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('resize', onResize)
+    }
   }, [open])
 
   return (
