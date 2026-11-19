@@ -41,9 +41,8 @@ export function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/60 bg-bg/80 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#inicio" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-sm font-bold text-bg">JC</div>
-          <span className="hidden text-sm font-semibold sm:inline">{profile.name.split(' ').slice(0,2).join(' ')}</span>
+        <a href="#inicio" className="min-w-0 truncate text-sm font-semibold sm:text-base">
+          {profile.name.split(' ').slice(0, 2).join(' ')}
         </a>
         <button
           className="sm:hidden"
@@ -63,7 +62,7 @@ export function Navbar() {
             </li>
           ))}
           <li>
-            <a href={profile.cv} download className="rounded-lg bg-gradient-to-r from-accent to-accent-2 px-3 py-1.5 text-sm font-medium text-bg transition-opacity hover:opacity-90">
+            <a href={profile.cv} download className="rounded-lg bg-accent px-3 py-1.5 text-sm font-medium text-bg transition-colors hover:bg-accent/90">
               Descargar CV
             </a>
           </li>
@@ -80,7 +79,7 @@ export function Navbar() {
               </li>
             ))}
             <li className="py-2">
-              <a href={profile.cv} download className="inline-flex rounded-lg bg-gradient-to-r from-accent to-accent-2 px-3 py-1.5 text-sm font-medium text-bg">
+              <a href={profile.cv} download className="inline-flex rounded-lg bg-accent px-3 py-1.5 text-sm font-medium text-bg transition-colors hover:bg-accent/90">
                 Descargar CV
               </a>
             </li>

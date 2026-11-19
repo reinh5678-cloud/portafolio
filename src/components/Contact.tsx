@@ -41,7 +41,7 @@ export function Contact() {
           </a>
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <a href={profile.cv} download className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-accent to-accent-2 px-4 py-2 text-sm font-medium text-bg">
+          <a href={profile.cv} download className="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-bg transition-colors hover:bg-accent/90">
             Descargar CV en PDF
           </a>
         </div>

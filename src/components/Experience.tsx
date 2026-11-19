@@ -11,7 +11,7 @@ export function Experience() {
         <div className="absolute left-3 top-2 hidden h-[calc(100%-1rem)] w-px bg-border sm:block" />
         {profile.experience.map((job, idx) => (
           <article key={idx} className="relative rounded-2xl border border-border bg-card p-6 sm:ml-10">
-            <div className="absolute -left-10 top-6 hidden h-2 w-2 rounded-full bg-gradient-to-br from-accent to-accent-2 sm:block" />
+            <div className="absolute -left-10 top-6 hidden h-2 w-2 rounded-full bg-accent sm:block" />
             <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
               <div>
                 <h3 className="text-lg font-medium">{job.role}</h3>

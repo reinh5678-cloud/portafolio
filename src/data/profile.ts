@@ -59,6 +59,72 @@
       github: 'https://github.com/reinh5678-cloud/Reposteria',
       demo: null,
       featured: false
+    },
+    {
+      id: 'cuantica-crm',
+      name: 'CRM',
+      description: 'Módulo de CRM desarrollado en Cuántica Group S.A.C. para gestión de clientes con filtros persistentes y paginación.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
+    },
+    {
+      id: 'cuantica-pedidos',
+      name: 'Pedidos multicanal',
+      description: 'Gestión de pedidos multicanal con formularios dinámicos y exportaciones PDF/CSV.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
+    },
+    {
+      id: 'cuantica-inventario',
+      name: 'Inventario',
+      description: 'Control de inventario con consultas, validaciones y migraciones sobre PostgreSQL y MySQL.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
+    },
+    {
+      id: 'cuantica-ordenes',
+      name: 'Órdenes de trabajo',
+      description: 'Seguimiento de órdenes de trabajo y actividades técnicas del equipo.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
+    },
+    {
+      id: 'cuantica-asistencia',
+      name: 'Asistencia',
+      description: 'Registro y reporte de asistencia con filtros y exportaciones.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
+    },
+    {
+      id: 'cuantica-checklists',
+      name: 'Checklists y evidencias',
+      description: 'Checklists operativos y gestión de evidencias adjuntas.',
+      stack: ['React', 'Vue', 'ASP.NET Core', 'FastAPI', 'EF Core', 'PostgreSQL', 'MySQL', 'Docker'],
+      features: [],
+      image: null,
+      github: null,
+      demo: null,
+      featured: false
     }
   ],
   experience: [
