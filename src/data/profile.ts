@@ -66,7 +66,7 @@
       description: 'Reimplementación del sistema de gestión de órdenes de trabajo (O.T.) de T&T Ingeniería y Servicios.',
       stack: ['Vue 3', 'TypeScript', 'Vite', 'Tailwind CSS 4', 'Pinia', 'ASP.NET Core 8', 'PostgreSQL', 'Docker'],
       features: ['Dashboard con KPIs y 6 gráficos de O.T.', 'Cotizaciones, solicitudes y órdenes planificadas', 'Almacén: inventario, kardex y reposiciones', 'Login JWT y control de acceso por cargo'],
-      image: null,
+      image: '/img/projects/nuevonet/tyt.jpeg',
       github: null,
       demo: null,
       featured: false
@@ -77,7 +77,7 @@
       description: 'Sistema integral para BGM Ingeniería y Servicios: proyectos, órdenes de servicio, logística y finanzas.',
       stack: ['Vue 3', 'Vite', 'Pinia', 'ASP.NET Core 8', 'EF Core', 'PostgreSQL', 'Docker'],
       features: ['Órdenes de servicio, asignación de técnicos y QR de activos', 'Módulos comercial, logística, SSOMA y financiero', 'Reportes PDF con QuestPDF y exportaciones Excel', 'Arquitectura por capas con .NET 8 y PostgreSQL'],
-      image: null,
+      image: '/img/projects/bgm/bgm-desktop.jpg',
       github: null,
       demo: null,
       featured: false
@@ -88,7 +88,7 @@
       description: 'Plataforma de productos con tienda online, portal B2B y CRM para catálogo, pedidos y campañas.',
       stack: ['React 19', 'Vite', 'Tailwind CSS', 'ASP.NET Core 8', 'EF Core', 'PostgreSQL', 'Docker'],
       features: ['Tienda con carrito, checkout y seguimiento de pedidos', 'Portal B2B de mayoristas con registro de solicitudes', 'CRM con campañas, reclamos, facturas y editor web', 'Reordenación drag & drop y exportación PDF'],
-      image: null,
+      image: '/img/projects/productos-ucharima/ucharima.jpeg',
       github: null,
       demo: null,
       featured: false
