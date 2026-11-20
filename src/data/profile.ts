@@ -61,17 +61,6 @@
       featured: false
     },
     {
-      id: 'web-cuanticagroup',
-      name: 'Web Cuántica Group',
-      description: 'Sitio corporativo con landing editorial y panel de administración para CRM, correos y gestión de contenidos.',
-      stack: ['React 19', 'Vite', 'Tailwind CSS', 'React Router', 'FastAPI', 'PostgreSQL', 'Docker'],
-      features: ['Landing con portafolio, servicios, artículos y contacto', 'Panel admin con CRM, correos y usuarios', 'Editor de artículos con Quill y animaciones GSAP', 'API FastAPI con SQLAlchemy y Alembic'],
-      image: null,
-      github: null,
-      demo: null,
-      featured: false
-    },
-    {
       id: 'nuevonet',
       name: 'NuevoNet — T&T Ingeniería y Servicios',
       description: 'Reimplementación del sistema de gestión de órdenes de trabajo (O.T.) de T&T Ingeniería y Servicios.',
