@@ -9,18 +9,19 @@ export function Projects() {
   ]
 
   return (
-    <section id="proyectos" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Proyectos</h2>
-        <p className="mt-2 text-text-secondary">
+    <section id="proyectos" className="section mx-auto max-w-6xl scroll-mt-20 px-4 sm:px-6">
+      <div className="mb-10">
+        <p className="eyebrow mb-3"><span className="eyebrow-dot" />03 / Proyectos</p>
+        <h2 className="text-3xl font-semibold sm:text-4xl">Proyectos</h2>
+        <p className="mt-3 max-w-2xl text-sm text-text-secondary">
           Proyectos personales y módulos desarrollados en Cuántica Group
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <article key={project.id} className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-accent/60">
+          <article key={project.id} className="card card-hover group flex h-full flex-col overflow-hidden">
             {project.image ? (
-              <div className="relative aspect-video overflow-hidden">
+              <div className="relative aspect-video overflow-hidden border-b border-border">
                 <img src={project.image} alt={project.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" loading="lazy" />
               </div>
             ) : (
@@ -36,21 +37,22 @@ export function Projects() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
-                  <span key={tech} className="rounded-full border border-border px-2.5 py-1 text-xs text-text-secondary">
-                    {tech}
-                  </span>
+                  <span key={tech} className="chip">{tech}</span>
                 ))}
               </div>
               {project.features.length > 0 && (
-                <ul className="space-y-1 text-sm text-text-secondary">
+                <ul className="space-y-2 text-sm text-text-secondary">
                   {project.features.slice(0, 4).map((feature) => (
-                    <li key={feature}>• {feature}</li>
+                    <li key={feature} className="flex gap-2">
+                      <span className="text-accent">—</span>
+                      <span>{feature}</span>
+                    </li>
                   ))}
                 </ul>
               )}
-              <div className="mt-auto flex flex-wrap items-center gap-3 text-sm text-text-secondary">
+              <div className="mt-auto flex flex-wrap items-center gap-4 border-t border-border pt-4 text-sm text-text-secondary">
                 {project.github ? (
-                  <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-text">
+                  <a href={project.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-accent">
                     <GithubIcon className="h-4 w-4" />
                     Código
                   </a>
@@ -58,7 +60,7 @@ export function Projects() {
                   <span>Sin repositorio público</span>
                 )}
                 {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-text">
+                  <a href={project.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 transition-colors hover:text-accent">
                     <ExternalLink className="h-4 w-4" />
                     Demo
                   </a>

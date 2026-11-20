@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -22,12 +22,20 @@
     <meta name="twitter:description" content="Desarrollador Full Stack | Bases de Datos. Revisa mis proyectos y experiencia." />
     <meta name="twitter:image" content="https://portafolio-eight-mu-99.vercel.app/og.png" />
     <meta name="twitter:image:alt" content="José Luis Carbajal Magallanes - Desarrollador Full Stack" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#f7f4ef" />
+    <script>
+      /* Aplica el tema antes del primer pintado para evitar el destello. */
+      try {
+        if (localStorage.getItem('portafolio-theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) { /* localStorage puede fallar en modo privado */ }
+    </script>
     <link rel="canonical" href="https://portafolio-eight-mu-99.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
